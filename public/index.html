@@ -1,34 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html>    
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/resources/images/t-high-resolution-logo-transparent-icon.png">
-    
-    <title>Golang WebAssembly</title>
-    <link rel="stylesheet" type="stylesheet" href="/resources/css/styles.css">
-    <script src="/wasm_exec.js"></script>
-    <script>
-        const go = new Go();
-        WebAssembly.instantiateStreaming(fetch("/main.wasm"), go.importObject).then((result) => {
-            go.run(result.instance);
-        });
-    </script>
-</head>
-<body>
-    <div class="main-container">
-    <!--wrapper for all elements - TODO - center and make ~90vh ~65vw -->
-      <div class="content-container">
-          <header>
-            <div class="item flex-1">1 TEST</div>
-            <div class="item flex-2">2</div>
-          </header>
-          <div class="content-flex">
-            <div class="item flex-3">3</div>
-            <div class="item flex-4">4</div>
-          </div>
+    <title>CSS Christmas Present</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <img src="Frame 1.png" alt="">
+            <div class="present">
+                <div class="lid">
+                    <span></span>
+                </div>
+                <div class="promo">
+                    <p>Merry Christmas,</p>
+                    <div id="name">text</div>
+                </div>
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        
+                
+                <img src="Frame 3.png" alt="">
+            
+                <script>
+                    var userName = "Test User";
+            
+                    document.getElementById("name").innerHTML = userName;
+                    
+                </script>   
         </div>
-      </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
